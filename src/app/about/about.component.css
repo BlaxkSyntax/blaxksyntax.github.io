@@ -1,0 +1,13 @@
+div{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div div{
+    background-color: rgb(223, 220, 220);
+    padding: 20px;
+    margin: 20px;
+}

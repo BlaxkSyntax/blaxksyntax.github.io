@@ -1,0 +1,12 @@
+.email div input[type=email]{
+    width: 95%;
+}
+
+.phone div input[type=tel]{
+    width: 95%;
+}
+
+.msg div input[type=text]{
+    width: 95%;
+    height: 300px;
+}
