@@ -1,12 +1,113 @@
-.email div input[type=email]{
-    width: 95%;
+.contacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
-.phone div input[type=tel]{
-    width: 95%;
+.contact-content {
+    display: flex;
+    margin: 30px;
 }
 
-.msg div input[type=text]{
-    width: 95%;
-    height: 300px;
+.contact-header {
+    text-align: center;
+}
+
+.contact{
+    width: 400px;
+    background : #45A29E;
+    border-radius: 20px 0 0 20px;
+}
+
+.message {
+    width: 400px;
+    background:  #1F2833;
+    border-radius: 0 20px 20px 0;
+}
+
+
+.message-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-main {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    display: flex;
+}
+
+h1,
+p {
+    color:#C5C6C7;
+}
+
+.message-header {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .contacts {
+        width: 100%;
+        display: flex;
+    }
+
+    .contact-content {
+        display: block;
+        margin: 30px;
+    }
+
+    .contact-header {
+        text-align: center;
+    }
+
+    .contact{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .message {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+
+
+    .message-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background:  #1F2833;
+    }
+
+    .contact-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    li {
+        display: flex;
+    }
+
+    .message-header {
+        text-align: center;
+    }
+
 }

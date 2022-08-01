@@ -1,2 +1,55 @@
-<h2>testing angular</h2>
-<router-outlet></router-outlet>
+<!-- app theme -->
+<div class="theme">
+  <div class="top">
+    <mat-toolbar class="toolbar">
+      <button mat-icon-button class="manu-icon" aria-label="Example icon-button with menu icon" type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span><a href="">Sihle Dubazana</a></span>
+      <span class="spacer"></span>
+      <nav class="nav-links">
+        <a href="/home">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/gallary">Gallary</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>  
+      </nav>
+      <span class="spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </div>
+  <div class="content">
+    <mat-drawer-container class="container" autosize>
+      <mat-drawer #drawer class="sidenav" mode="side">
+        <a href="/home">Home</a>
+        <a href="/blog">Blog</a>
+        <a href="/gallary">Gallary</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </mat-drawer>
+      <div class="sidenav-content">
+        <router-outlet></router-outlet>
+        <div>
+          <footer>
+            <div>
+              <div class="socials">
+                <img width="20px" height="20px" alt="Home" src="/assets/icons/facebook.png"/>
+                <img width="20px" height="20px" alt="Home" src="/assets/icons/linkedin.png"/>
+                <img width="20px" height="20px" alt="Home" src="/assets/icons/instagram.png"/>
+                <img width="20px" height="20px" alt="Home" src="/assets/icons/whatsapp.svg"/>
+              </div>
+              <div>
+                <p><b>Develop By </b> Sihle Dubazana</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </mat-drawer-container>
+  </div>
+</div>

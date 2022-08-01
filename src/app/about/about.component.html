@@ -1,36 +1,76 @@
-<div>
-    <div class="about">
-        <article>
-            <h2>About</h2>
-            <p>
-                Code Name BlaxkSyntax, a curious and creative cat, Who driven by success. <br>
-                I find focus, handworkd, consistency, honesty and a will to learn to be the most valueble qualities. <br>
-                I Studied Systems Development at WeThinkCode.<br>
-                I'm a fullstack systems developer
-            </p>
-        </article>
-    </div>
-    <div class="skills">
-        <article>
-            <h2>Skills</h2><br>
-            <b>Python</b><br>
-            <b>Java</b><br>
-            <b>Android-Studio</b><br>
-            <b>JavaScript</b><br>
-            <b>scala</b><br>
-            <b>C++</b><br>
-            <b>C</b><br>
-            <b>flutter</b><br>
-            <b>Sql</b><br>
-            <b>Docker</b><br>
-        </article>
-    </div>
-    <div class="interests">
-        <article>
-            <h2>Interests</h2>
-            <p>
-                Im interested in the development for smart systems, Artifictial Intelligence, and Intelligent Automation
-            </p>
-        </article>>
-    </div>
+<div class="about">
+    <mat-card class="card">
+        <div class="subject">
+            <mat-card-title>{{get.person.name}}</mat-card-title>
+            <mat-card-content>
+              <p>{{get.person.number}}</p>
+              <p>{{get.person.email}}</p>
+              <p>{{get.person.linkedin}}</p>
+              <p>{{get.person.github}}</p>
+
+            </mat-card-content>
+        </div>
+        <br>
+        <div class="subject">
+            <mat-card-title>Summary</mat-card-title>
+            <mat-card-content>
+              <p>{{get.summary}}</p>
+            </mat-card-content>
+        </div>
+        <br>
+        <div class="subject">
+            <mat-card-title>Education</mat-card-title>
+            <mat-card-subtitle>{{get.ints}}</mat-card-subtitle>
+            <mat-card-content>
+              <p>{{get.cer}}</p>
+              <p>{{get.year}}</p>
+              <p>{{get.course}}</p>
+            </mat-card-content>
+        </div>
+        <br>
+        <div class="subject">
+            <mat-card-title>Skills</mat-card-title>
+            <mat-card-subtitle><b>Languages</b></mat-card-subtitle>
+            <mat-card-content >
+              <p *ngFor="let lang of get.languages">{{lang}}</p><br>
+              <mat-card-subtitle><b>Frameworks</b></mat-card-subtitle>
+               <p *ngFor="let lang of get.frameworks">{{lang}}</p><br>
+              <mat-card-subtitle><b>Cloud</b></mat-card-subtitle>
+               <p *ngFor="let lang of get.cloud">{{lang}}</p><br>
+            </mat-card-content>
+        </div><br>
+        <div class="subject">
+            <mat-card-title>Experience</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+            <mat-card-content *ngFor="let lang of get.work"><br>
+              <p>{{lang.work}}</p>
+              <p>{{lang.company}}</p>
+              <p *ngFor="let dt of lang.workdate">{{dt}}</p><br>
+              <p *ngFor=" let ex of lang.responsiblilities">{{ex}}</p>
+            </mat-card-content><br>
+        </div>
+        <br>
+        <div class="subject">
+            <mat-card-title>Volunteer</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+            <mat-card-content *ngFor="let lang of get.work"><br>
+              <p>{{lang.work}}</p>
+              <p>{{lang.company}}</p>
+              <p *ngFor="let dt of lang.workdate">{{dt}}</p><br>
+              <p *ngFor=" let ex of lang.responsiblilities">{{ex}}</p>
+            </mat-card-content><br>
+        </div>
+        <br>
+        <div>
+            <mat-card-title>Volunteer</mat-card-title>
+            <mat-card-subtitle></mat-card-subtitle>
+            <mat-card-content *ngFor="let lang of get.work"><br>
+              <p>{{lang.work}}</p>
+              <p>{{lang.company}}</p>
+              <p *ngFor="let dt of lang.workdate">{{dt}}</p><br>
+              <p *ngFor=" let ex of lang.responsiblilities">{{ex}}</p>
+            </mat-card-content><br>
+        </div>
+        <br>
+    </mat-card>
 </div>

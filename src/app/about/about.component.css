@@ -1,13 +1,16 @@
-div{
-    position: relative;
-    display: block;
+.about {
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    width: 100%;
 }
 
-div div{
-    background-color: rgb(223, 220, 220);
-    padding: 20px;
+.card {
     margin: 20px;
+    width: 60%;
+    background: #C5C6C7;
+}
+
+.subject {
+    border-bottom: solid black 1px;
 }

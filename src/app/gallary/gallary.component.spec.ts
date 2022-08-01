@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DevspaceComponent } from './devspace.component';
+import { GallaryComponent } from './gallary.component';
 
-describe('DevspaceComponent', () => {
-  let component: DevspaceComponent;
-  let fixture: ComponentFixture<DevspaceComponent>;
+describe('GallaryComponent', () => {
+  let component: GallaryComponent;
+  let fixture: ComponentFixture<GallaryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DevspaceComponent ]
+      declarations: [ GallaryComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DevspaceComponent);
+    fixture = TestBed.createComponent(GallaryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
